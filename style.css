@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    font-size: 16.5%;
+}
 .header .navbar{
     text-align: right;
     border: 2px solid red;
