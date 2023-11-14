@@ -87,6 +87,7 @@ li{
     clear: both;
 }
 
+
 .navbar .logo{
     /* border: 2px solid black; */
     width: 10%;
@@ -111,7 +112,7 @@ li{
 /* ------------------------------ Info Styling ------------------------- */
 .info{
     /* border: 2px solid green; */
-    width: 50%;
+    width: 40%;
     margin-top: 2em;
     position: absolute;
     top: 35%;
@@ -120,6 +121,7 @@ li{
     padding: 1em;
     /* line-height-step: 2px; */
 }
+
 .info .infoContent .infoBtn{
     /* border: 2px solid red; */
     padding: 0.5em;
@@ -158,6 +160,26 @@ li{
     width: 40%;
     margin: 1rem 0;
 }
+.header .headerimg{
+    /* border: 2px solid green; */
+    width: 400px;
+    height: 450px;
+    position: absolute;
+    top:10%;
+    right: 10%;
+    border-radius: 50px;
+}
+.headerimg img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    border-radius: 50px;
+    box-shadow: 1px 1px 10px 10px beige;
+
+}
+
 
 /* ----------------------------- About Styling ------------------------------- */
 .about .aboutHeading{
@@ -536,3 +558,176 @@ li{
     font-weight: bold;
 }
 
+/* ------------------------------ MEDIA QUERIES ------------------------------------ */
+/* .info{
+    /* border: 2px solid green; */
+    /* width: 40%;
+    margin-top: 2em;
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    transform: translate(-20%,-35%);
+    padding: 1em; */
+    /* line-height-step: 2px; */
+/* } */ 
+@media(max-width:500px){
+    .header{
+        height: 65vh;
+    }
+    .header .headerimg{
+        width: 300px;
+        height: 350px;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%,-5%);
+    }
+    .header .info{
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        /* border: 2px solid green; */
+        height: 40%;
+        text-align: center;
+    }
+    .header .info .infoContent h1{
+        font-size: 20px;
+    }
+    .header .info .infoContent h2{
+        font-size: 15px
+    }
+    .header .info .infoContent h3{
+        font-size: 10px;
+        margin-top: 1em;
+    }
+    .header .info .infoContent p{
+        display: none;
+    }
+    .header .info .infoContent .socialLinks{
+        display: none;
+    }
+    /* ..info .infoContent .infoBtn{
+        /* border: 2px solid red; */
+        /* padding: 0.5em;
+        border-radius: 50px;
+        background: linear-gradient(rgba(240, 18, 18, 0.956), rgba(33, 33, 147, 0.616)), red;
+    
+        font-size: 2rem;
+        font-weight: bold;
+    }  */
+    .info .infoContent .infoBtn{
+        font-size: 10px;
+    }
+    /* ------------------- About Media querry ----------------- */
+    .about .aboutHeading h1{
+        font-size: 20px;
+    }
+    
+    .about .aboutBox0{
+        display: block;
+        /* border: 2px solid green; */
+    }
+    .about .aboutBox0 .aboutBox1, 
+    .about .aboutBox0 .aboutBox2{
+        width: 100%;
+        /* border: 2px solid red; */
+        text-align: center;
+    }
+    .about .aboutBox0 .aboutBox2 p{
+        font-size: 10px;
+    }
+    
+    .about .aboutBox0 .aboutBox2 .aboutBtn{
+        font-size: 10px;
+    }
+
+    /* -------------------------- Skills Media querry -------------- */
+    .skillsBlock .leftSkill,
+    .skillsBlock .rightSkill{
+        float: none;
+        width: 100%;
+    }
+    .skillsBlock .ls .lsimage img{
+        width: 30px;
+        height: 30px;
+    }
+    .skillsBlock .ls .lstext h2{
+        font-size: 15px;
+    }
+    .skillsBlock .ls .lstext h3{
+        font-size: 10px;
+    }
+    .skillsBlock .ls .lstext .line{
+        border: 2px solid red;
+    }
+    .skills h1{
+        font-size: 20px;
+    }
+    
+    /* ------------------- Services Media Querry ----------------- */
+    .services .heading1{
+        font-size: 20px;
+    }
+    .serviceblock{
+        display: block;
+        /* border: 2px solid green; */
+    }
+    .serviceblock .service{
+        width: 100%;
+        /* border: 2px solid red; */
+        margin-bottom: 1em;
+    }
+    .serviceblock .service .heading2{
+        font-size: 15px;
+    }
+    .serviceblock .service .btn3{
+        font-size: 10px;
+    }
+    .serviceblock .service .srlink{
+        font-size: 20px;
+    }
+
+    /* ------------------ Projects Media ------------------- */
+    .project{
+        border: 2px solid red;
+        margin-top: 10em;
+        display: block;
+    }
+    .project .heading1{
+        font-size: 20px;
+    }
+    .project .projects{
+        width: 100%;
+        /* height: 100% */
+        margin-bottom: 2em;
+    }
+    .project .projectBlock{
+        height: 250px;
+        width: 250px;
+    }
+    .btn3{
+        font-size: 10px;
+    }
+    .project .projects .procontent h2{
+        font-size: 15px;
+    } 
+
+    /* ------------------------------- Contact Media --------------------- */
+    .contact{
+        margin-top: 80em;
+    }
+    
+    
+}
+@media(max-width : 1024px){
+    .navbar{
+        display: none;
+    }
+}
+@media (min-width : 1px) and (max-width : 1024px){
+    /* .container{
+        max-width: 1024px;
+        width: 70vh;
+        margin: 0 auto;
+    } */
+}
