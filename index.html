@@ -3,36 +3,279 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>index page</title>
-
+    <link rel="stylesheet" href="./Css.css">
+    <script src="https://kit.fontawesome.com/8f40415482.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">    <title>Home Page</title> -->
 </head>
 <body>
     <header class="header">
         <nav class="navbar container">
-            <ul class="tabs">
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Hire</a></li>
-                <li><a href="">Blogs</a></li>
-            </ul>
-        </nav>
-        <section class="container">
-            <div class="name">
-                <div class="img">
-                    <img src="./IMG_20230331_143000980 (1).jpg" alt="My Image">
-                </div>
-                <div class="nameheading fontwhite">
-                    <h2>Ayush Chaudhary</h2>
-                </div>
+            <div class="logo"><h1>Logo</h1></div>
+            <div class="navlist">
+                <ul class="navlistBlock">
+                    <li class="navlistItems"><a href="./index.html" class="navbaritemHeading">Home</a></li>
+                    <li class="navlistItems"><a href="#about" class="navbaritemHeading">About</a></li>
+                    <li class="navlistItems"><a href="#skills" class="navbaritemHeading">Skills</a></li>
+                    <li class="navlistItems"><a href="#services" class="navbaritemHeading">Services</a></li>
+                    <li class="navlistItems"><a href="#project" class="navbaritemHeading">Projects</a></li>
+                    <li class="navlistItems"><a href="https://docs.google.com/document/d/1uVPntRwBWKdo9reUlG8cGfoid8MBMRk5wDhuxuQm4Tg/edit?usp=sharing" class="navbaritemHeading" target="_blank">Resume</a></li>
+                    <li class="navlistItems"><a href="#contact" class="navbaritemHeading">Contact</a></li>
+                </ul>
 
             </div>
+        </nav>
+        <div class="info container">
+            <div class="infoContent">
+                <h3 class="heading3 infoitems">Hello there ></h3>
+                <h1 class="heading1 textwhite infoitems">I am Ayush Chaudhary</h1>
+                <h2 class="heading2 infoitems">MERN Stack Developer and Ametuer Astronomer.</h2>
+                <p>dkdkjdfkdjdjf ssdkk slkd  slkd ldlkd lloeroe eaque voluptatum distinctio nam atque.\</p>
+                <div class="socialLinks">
+                        <!-- <a href="https://www.linkedin.com/in/ayush-chaudhary17/" target="_blank"> -->
+                        <a href="https://www.linkedin.com/in/ayush-chaudhary17/" target="_blank">
+                            <i class="fa fa-linkedin-square fa-bounce slinks" aria-hidden="true"></i>
 
-        </section>
+                        </a>
+                        <a href="https://github.com/AyushChaudhary17" target="_blank">
+
+                            <i class="fa-brands fa-github fa-bounce slinks "></i>
+                        </a>
+                        <a href="https://mail.google.com/" target="_blank">
+                            <i class="fa-regular fa-envelope fa-bounce"></i>
+                        </a>
+                        <a href="https://mail.google.com/" target="_blank">
+                            <i class="fa-brands fa-instagram fa-bounce slinks"></i>
+                        </a>
+
+                </div>
+                <input type="button"class="infoBtn infoitems" value="See my Work">
+            </div>
+        </div>
     </header>
+    <section class="about" id="about">
+        <div class="aboutHeading container">
+            <h1 class="heading1">About me</h1>
+        </div>
+        <div class="aboutBox0 container">
+            <div class="aboutBox1"><img src="./images/An anime-style collage depicting various IT professionals hard at work in a high-tech environment_.jpg" alt=""></div>
+            <div class="aboutBox2">
+                <p><span style="font-size: 6rem; color: linear-gradient(rgba(240, 18, 18, 0.956), rgba(33, 33, 147, 0.616)), red;
+                    ;">"</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti repellendus nobis nam molestias voluptates necessitatibus quidem laborum impedit, nihil quisquam, fuga dicta reiciendis odio eum ad similique iste magni tempore eveniet itaque incidunt unde, voluptas at optio? Quisquam fugiat dignissimos quidem accusamus eum doloribus eaque iure saepe atque enim? Deleniti!</p>
+                <input type="button" value="Know More" class="aboutBtn">
+            </div>
+        </div>
+    </section>
+    <section class="skills" id="skills">
+        <h1 class="heading1 container">Skills</h1>
+        <div class="container skillsBlock">
+            <div class="leftSkill ls">
+                <div class="lsimage">
+                    <img src="./images/Html logo.jpg" alt="">
+                </div>
+                <div class="lstext">
+                    <h2 class="heading2">HTML</h2>
+                    <h3 class="heading3">90%</h3>
+                    <div class="line l1"></div>
+                    
+                </div>
+            </div>
+            <div class="rightSkill ls">
+                <div class="lsimage">
+                    <img src="./images/CSS logo.jpg" alt="">
+                </div>
+                <div class="lstext">
+                    <h2 class="heading2">CSS</h2>
+                    <h3 class="heading3">80%</h3>
+                    <div class="line l2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container skillsBlock">
+            <div class="leftSkill ls">
+                <div class="lsimage">
+                    <img src="./images/javaScript logo.jpg" alt="">
+                </div>
+                <div class="lstext">
+                    <h2 class="heading2">Java Sript</h2>
+                    <h3 class="heading3">20%</h3>
+                    <div class="line l3"></div>
+                    
+                </div>
+            </div>
+            <div class="rightSkill ls">
+                <div class="lsimage">
+                    <img src="./images/reactJs logo.jpg" alt="">
+                </div>
+                <div class="lstext">
+                    <h2 class="heading2">React.js</h2>
+                    <h3 class="heading3">0%</h3>
+                    <div class="line l4"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container skillsBlock">
+            <div class="leftSkill ls">
+                <div class="lsimage">
+                    <img src="./images/C language logo.jpg" alt="">
+                </div>
+                <div class="lstext">
+                    <h2 class="heading2">C</h2>
+                    <h3 class="heading3">90%</h3>
+                    <div class="line l5"></div>
+                    
+                </div>
+            </div>
+            <div class="rightSkill ls">
+                <div class="lsimage">
+                    <img src="./images/c++ logo.jpg" alt="">
+                </div>
+                <div class="lstext">
+                    <h2 class="heading2">C++</h2>
+                    <h3 class="heading3">60%</h3>
+                    <div class="line l6"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container skillsBlock">
+            <div class="leftSkill ls">
+                <div class="lsimage">
+                    <img src="./images/java logo.jpg" alt="">
+                </div>
+                <div class="lstext">
+                    <h2 class="heading2">Java</h2>
+                    <h3 class="heading3">40%</h3>
+                    <div class="line l7"></div>
+                    
+                </div>
+            </div>
+            <div class="rightSkill ls">
+                <div class="lsimage">
+                    <img src="./images/python logo.jpg" alt="">
+                </div>
+                <div class="lstext">
+                    <h2 class="heading2">Python</h2>
+                    <h3 class="heading3">60%</h3>
+                    <div class="line l8"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <h1 class="heading1">Services</h1>
+        <div class="serviceblock container">
+            <div class="service">
+                <i class="fa fa-code fa-bounce srlink" aria-hidden="true"></i>
+                <h2 class="heading2">Web Development</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto optio deserunt accusantium! Pariatur distinctio id hic? Possimus nam accusantium culpa?</p>
+            <input type="button" class="btn3" value="read more">
+        </div>
+            <div class="service">
+                <i class="fa fa-database fa-bounce srlink" aria-hidden="true"></i>
+                <h2 class="heading2">Web Development</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto optio deserunt accusantium! Pariatur distinctio id hic? Possimus nam accusantium culpa?</p>
+            <input type="button" class="btn3" value="read more">
+        </div>
+            <div class="service">
+                <i class="fa fa-pencil-square-o fa-bounce srlink" aria-hidden="true"></i>
+                <h2 class="heading2">Web Development</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto optio deserunt accusantium! Pariatur distinctio id hic? Possimus nam accusantium culpa?</p>
+            <input type="button" class="btn3" value="read more">
+        </div>
+        </div>
+    </section>
+    <section class="project" id="project">
+        <h1 class="heading1">Projects</h1>
+        <div class="projectBlock container">
+            <div class="projects">
+                <img src="./images/CSS logo.jpg" alt="">
+                <div class="procontent">
+                    <h2 class="heading2">Heading</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quos dolore iste dicta obcaecati, iure repudiandae velit blanditiis similique alias!</p>
+                    <input type="button" class="btn3" value="Read more" id="">
+                </div>
+            </div>
+            <div class="projects">
+                <img src="./images/java logo.jpg" alt="">
+                <div class="procontent">
+                    <h2 class="heading2">Heading</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quos dolore iste dicta obcaecati, iure repudiandae velit blanditiis similique alias!</p>
+                    <input type="button" class="btn3" value="Read more" id="">
+                </div>
+            </div>
+            <div class="projects">
+                <img src="./images/python logo.jpg" alt="">
+                <div class="procontent">
+                    <h2 class="heading2">Heading</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quos dolore iste dicta obcaecati, iure repudiandae velit blanditiis similique alias!</p>
+                    <input type="button" class="btn3" value="Read more" id="">
+                </div>
+            </div>
+            
+        </div>
+        <div class="input">
 
-    
+            <input type="button" value="More" class="btn3">
+        </div>
+        
+    </section>
+    <section class="contact" id="contact">
+        <div class="contactBox container">
+                <div class="contactInfo">
+                    <h1 class="heading1">Contact me</h1>
+                    <div class="contacticonBox">
+                        <div class="contacticon">
+                            
+                            <i class="fa-brands fa-telegram fa-bounce clink"></i>
+                        </div>
+                        <div class="icontxt">
+
+                            <h2 class="heading2">ayushchaudhary1702@gmail.com</h2>
+                        </div>
+                    </div>
+                    <div class="contacticonBox">
+                        <div class="contacticon">
+
+                            
+                            <i class="fa-solid fa-phone fa-bounce clink"></i>
+                        </div>
+                        <div class="icontxt">
+
+                            <h2 class="heading2">+91 9555268548</h2>
+                            <!-- <h2 class="heading2">ayushchaudhary1702@gmail.com</h2> -->
+                        </div>
+                    </div>
+                    <div class="socialLinks contactLink">
+                        <!-- <a href="https://www.linkedin.com/in/ayush-chaudhary17/" target="_blank"> -->
+                        <a href="https://www.linkedin.com/in/ayush-chaudhary17/" target="_blank">
+                            <i class="fa fa-linkedin-square fa-bounce clink contactlinks" aria-hidden="true"></i>
+
+                        </a>
+                        <a href="https://github.com/AyushChaudhary17" target="_blank">
+
+                            <i class="fa-brands fa-github fa-bounce clink contactlinks "></i>
+                        </a>
+                        <a href="https://mail.google.com/" target="_blank">
+                            <i class="fa-regular fa-envelope fa-bounce clink contactlinks"></i>
+                        </a>
+                        <a href="https://mail.google.com/" target="_blank">
+                            <i class="fa-brands fa-instagram fa-bounce clink contactlinks"></i>
+                        </a>
+                    </div>
+                    <div class="contactbtn">
+                        <a href="https://docs.google.com/document/d/1uVPntRwBWKdo9reUlG8cGfoid8MBMRk5wDhuxuQm4Tg/edit?usp=sharing" class="btn3" target="_blank">Download CV</a>
+                    </div>
+                </div>
+                <div class="contactform">
+                    <input type="text" placeholder="Your Name" class="input" required>
+                    <input type="text" placeholder="Your Email" class="input" required>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Write your message."></textarea>
+                    <input type="submit" value="Submit" class="btn3 infosubmit">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>Ayush Chaudhary Portfolio 2023 copyright &copy; , all rights are reserved</p>
+    </footer>
 </body>
 </html>
