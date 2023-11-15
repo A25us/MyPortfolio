@@ -470,7 +470,7 @@ li{
 .contact .contactBox .contactInfo{
     /* border: 2px solid red; */
     height: 100%;
-    width: 38%;
+    width: 40%;
     padding: 2em;
 }
 .contactBox .contactInfo .clink{
@@ -573,9 +573,9 @@ li{
     .header .headerimg{
         width: 300px;
         height: 350px;
-        top: 5%;
+        top: 12%;
         left: 50%;
-        transform: translate(-50%,-5%);
+        transform: translate(-50%,-12%);
     }
     /* ------------------------- Contact Media --------------------------------------------- */
     .contact{
@@ -720,10 +720,202 @@ li{
         display: none;
     }
 }
-@media (min-width : 1px) and (max-width : 1024px){
-    /* .container{
-        max-width: 1024px;
-        width: 70vh;
-        margin: 0 auto;
+@media (min-width : 501px) and (max-width : 768px){
+    html{
+        font-size: 50%;
+    }
+    .footer{
+        height: auto;
+    }
+    .header{
+        height: 65vh;
+    }
+    .header .headerimg{
+        width: 280px;
+        height: 300px;
+        top: 12%;
+        left: 50%;
+        transform: translate(-50%,-12%);
+    }
+    /* ------------------------- Contact Media --------------------------------------------- */
+    .contact{
+        /* border: 2px solid red; */
+        height: auto;
+        margin-bottom: 4em;
+    }
+    .contact .contactBox{
+        /* border: 2px solid green; */
+        display: block;
+        height: auto;
+    }
+    .contact .contactBox .contactInfo{
+        /* border: 2px solid yellow; */
+        display: block;
+        width: 100%;
+        margin-bottom: 4em;
+        /* text-align: center; */
+    }
+    .contact .contactBox .contactform{
+        /* border: 2px solid pink; */
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .contactInfo .contactbtn{
+        /* border: 2px solid green; */
+        text-align: center;
+    }
+    .contact .contactBox .contactInfo .heading1{
+        text-align: center;
+    }
+
+    /* ----------------------------- Services Media -------------------------- */
+    .services{
+        /* border: 2px solid red; */
+        height: auto;
+    }
+    .services .serviceblock{
+        /* border: 2px solid green; */
+        display: block;
+    }
+    .services .serviceblock .service{
+        /* border: 2px solid yellow; */
+        display: block;
+        width: 70%;
+        margin: 2em auto;
+    }
+
+
+
+
+
+
+
+
+    .header .info{
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        /* border: 2px solid green; */
+        height: 40%;
+        text-align: center;
+    }
+        .header .info .infoContent p{
+        display: none;
+    }
+    .header .info .infoContent .socialLinks{
+        display: none;
+    }
+    
+    .about{
+        height: auto;
+    }
+    .about .aboutBox0{
+        display: block;
+        /* border: 2px solid green; */
+    }
+    .about .aboutBox0 .aboutBox1, 
+    .about .aboutBox0 .aboutBox2{
+        width: 100%;
+        display: block;
+        /* border: 2px solid red; */
+        text-align: center;
+    }
+    /* .about .aboutBox0 .aboutBox2 p{
+        font-size: 10px;
     } */
+    
+    /* .about .aboutBox0 .aboutBox2 .aboutBtn{
+        font-size: 10px;
+    } */
+
+    /* -------------------------- Skills Media querry -------------- */
+    .skills{
+        /* border: 2psx solid red; */
+        height: auto;
+    }
+    .skills .skillsBlock{
+        height: auto;
+        display: block;
+        width: 100%;
+    }
+    .skills .skillsBlock .leftSkill{
+        display: block;
+        float: none;
+        width: 100%;
+        
+    }
+    .skillsBlock .rightSkill{
+        float: none;
+        width: 100%;
+    }
+    
+
+    /* ------------------ Projects Media ------------------- */
+    .project{
+        /* border: 2px solid green; */
+        margin-top: 2em;
+        height: auto;
+    }
+    .project .projectBlock{
+        /* border: 2px solid red; */
+        height: 100%;
+        display: block;
+        text-align: center;
+    }
+    .projectBlock .projects{
+        /* border: 2px solid yellow; */
+        width: 70%;
+        margin:2em auto;
+        
+    }
+}
+@media(min-width:769px) and (max-width:1024px){
+    html{
+        font-size: 50%;
+    }
+    .header .info{
+        /* border: 2px solid green; */
+        width: 38%;
+        left: 12%;
+    }
+    .about{
+        /* border: 2px solid red; */
+        height: auto;
+        margin-bottom: 15em;
+    }
+    .skills{
+        /* border: 2px solid green; */
+        height: auto;
+        margin-bottom: 15em;
+
+    }
+    .services{
+        /* border: 2px solid yellow; */
+        height: auto;
+        margin-bottom: 15em;
+
+    }
+    .project{
+        /* border: 2px solid green; */
+        height: auto;
+        margin-bottom: 15em;
+
+    }
+    .contact{
+        /* border: 2px solid red; */
+        height: auto;
+        margin-bottom: 10em;
+
+    }
+    .contact .contactBox .contactInfo{
+        width: 40%;
+        /* border: 2px solid red; */
+    }
+    .contact .contactBox .contactform{
+        width: 50%;
+        /* border: 2px solid green; */
+    }
 }
