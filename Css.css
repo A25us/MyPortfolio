@@ -61,6 +61,7 @@ li{
     padding: 1em;
     font-size: 1.5rem;
     font-weight: bold;
+    display: inline-block;
     background: linear-gradient(rgba(240, 18, 18, 0.956), rgba(33, 33, 147, 0.616)), red;
     border-radius: 50px;
     margin-top: 1em;
@@ -123,11 +124,11 @@ li{
 }
 
 .info .infoContent .infoBtn{
-    /* border: 2px solid red; */
+    /* border: 2px solid green; */
     padding: 0.5em;
     border-radius: 50px;
     background: linear-gradient(rgba(240, 18, 18, 0.956), rgba(33, 33, 147, 0.616)), red;
-
+    display: inline-block;
     font-size: 2rem;
     font-weight: bold;
 }
@@ -158,7 +159,7 @@ li{
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: 40%;
-    margin: 1rem 0;
+    margin: 2rem 0;
 }
 .header .headerimg{
     /* border: 2px solid green; */
@@ -225,7 +226,7 @@ li{
     padding: 0.5em;
     border-radius: 50px;
     background: linear-gradient(rgba(240, 18, 18, 0.956), rgba(33, 33, 147, 0.616)), red;
-
+    display: inline-block;
     font-size: 2rem;
     font-weight: bold;
     margin: 1em 2em;
