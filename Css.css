@@ -634,9 +634,9 @@ li{
 
 
     .header .info{
-        top: 78%;
+        top: 80%;
         left: 50%;
-        transform: translate(-50%,-78%);
+        transform: translate(-50%,-80%);
         width: 100%;
         /* border: 2px solid green; */
         text-align: center;
