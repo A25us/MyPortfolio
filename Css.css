@@ -571,8 +571,8 @@ li{
         height: 80vh;
     }
     .header .headerimg{
-        width: 200px;
-        height: 250px;
+        width: 250px;
+        height: 280px;
         top: 12%;
         left: 50%;
         transform: translate(-50%,-12%);
@@ -634,9 +634,9 @@ li{
 
 
     .header .info{
-        top: 80%;
+        top: 75%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%,-75%);
         width: 100%;
         /* border: 2px solid green; */
         height: 40%;
