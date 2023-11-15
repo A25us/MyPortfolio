@@ -637,9 +637,8 @@ li{
         top: 75%;
         left: 50%;
         transform: translate(-50%,-75%);
-        width: 100%;
+        width: 80%;
         /* border: 2px solid green; */
-        height: 40%;
         text-align: center;
     }
         .header .info .infoContent p{
