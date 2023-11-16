@@ -101,7 +101,7 @@ li{
 
 .navbar .navlist .navlistBlock{
     /* border: 2px solid red; */
-    width: 60%;
+    width: 70%;
     float: right;
 }
 .navbar .navlist .navlistBlock{
@@ -167,12 +167,13 @@ li{
 }
 .header .headerimg{
     /* border: 2px solid green; */
-    width: 400px;
-    height: 450px;
+    width: 60%;
+    height: 90%;
     position: absolute;
     top:10%;
     right: 10%;
-    border-radius: 50px;
+    /* border-radius: 50px; */
+    z-index: 3;
 }
 .headerimg img{
     width: 100%;
@@ -181,7 +182,7 @@ li{
     background-repeat: no-repeat;
     object-fit: cover;
     border-radius: 50px;
-    box-shadow: 1px 1px 10px 10px beige;
+    /* box-shadow: 1px 1px 10px 10px beige; */
 
 }
 
@@ -548,6 +549,20 @@ li{
     display: inline-block;
     width: 120px;
     margin-top: 1.5em;
+}
+
+
+.contact .contactBox .msg{
+    /* border: 2px solid green; */
+    left: 50%;
+    /* display: inline-block; */
+    width: 100%;
+    color: red;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 2em;
+    text-align: center;
+
 }
 /* ------------------------------ Footer Styling ------------------------ */
 .footer{

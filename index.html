@@ -27,7 +27,7 @@
             </ul>
         </div>
         <nav class="navbar container">
-            <div class="logo"><h1>Logo</h1></div>
+            <!-- <div class="logo"><h1>Logo</h1></div> -->
             <div class="navlist">
                 <ul class="navlistBlock">
                     <li class="navlistItems"><a href="./index.html" class="navbaritemHeading">Home</a></li>
@@ -42,7 +42,7 @@
             </div>
         </nav>
         <div class="headerimg">
-            <img src="./images/header image.jpg" alt="">
+            <img src="./images/IMG_20210101_123647-removebg-preview (1).png" alt="">
         </div>
     
         <div class="info container">
@@ -79,7 +79,7 @@
             <h1 class="heading1">About me</h1>
         </div>
         <div class="aboutBox0 container">
-            <div class="aboutBox1"><img src="./images/An anime-style collage depicting various IT professionals hard at work in a high-tech environment_.jpg" alt=""></div>
+            <div class="aboutBox1"><img src="./images/my phot.jpg" alt=""></div>
             <div class="aboutBox2">
                 <p><span style="font-size: 6rem; color: linear-gradient(rgba(240, 18, 18, 0.956), rgba(33, 33, 147, 0.616)), red;
                     ;">"</span>Hello, this is Ayush Chaudhary. Currently I am pursuing B.Tech from Dr. Shakunatala Misra National Rehabilitation University, Lucknow. I am a type of self learning person. I am a kind of introvert or sometimes I think that I am shy or caward. But I am skilled with some tech stuff. And I think that I could make a good presence in the environment of technologies and inovation. I am also an ametuer Astronomer and a member of an astronomy club where I am also working for my passion. </p>
@@ -296,12 +296,18 @@
                         <a href="https://docs.google.com/document/d/1uVPntRwBWKdo9reUlG8cGfoid8MBMRk5wDhuxuQm4Tg/edit?usp=sharing" class="btn3" target="_blank">Download CV</a>
                     </div>
                 </div>
-                <form action="" class="contactform">
-                    <input type="text" placeholder="Your Name" class="input" required>
-                    <input type="email" placeholder="Your Email" class="input" required>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Write your message."></textarea>
-                    <input type="submit" value="Submit" class="btn3 infosubmit">
-                </form>
+                <div class="contactform">
+
+                    <form action="" class="" name="submit-to-google-sheet">
+                        <input type="text" placeholder="Your Name" class="input" name="Name" required>
+                        <input type="email" placeholder="Your Email" class="input" name="Email" required>
+                        <textarea name="Message" id="" cols="30" rows="10" placeholder="Write your message."></textarea>
+                        <input type="submit" value="Submit" class="btn3 infosubmit">
+                    </form>
+                    <span class="msg" id="msg"></span>
+                </div>
+
+                
                     
                 </div>
             </div>
@@ -310,5 +316,25 @@
     <footer class="footer">
         <p>Ayush Chaudhary Portfolio 2023 copyright &copy; , all rights are reserved</p>
     </footer>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz-Lsf4t8Sdmxlv2dOXpJflwx_2bFp7JCJ3Yd9myzhyK5GyeTpN0vtetgBtSEAs2-dy/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg= document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent successfully !"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      
 </body>
 </html>
