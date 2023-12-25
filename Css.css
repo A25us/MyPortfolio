@@ -110,8 +110,19 @@ li{
     padding: 1em;
     flex-wrap: wrap;
 }
-.navlistItems a:hover{
-    border-bottom: 1px solid white;
+.navlistItems a::after{
+    border: 1px solid wheat;
+    display: block;
+    content: "";
+    /* background-color: ; */
+    opacity: 0;
+    width: 0%;
+    transition: 0.5s ease-in-out;
+    /* padding: 0.1em; */
+}
+.navlistItems a:hover::after{
+    width: 100%;
+    opacity: 1;
 }
 
 /* ------------------------------ Info Styling ------------------------- */
